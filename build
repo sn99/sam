@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+nasm src/$1.s -f bin -o $1.o

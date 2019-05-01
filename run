@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+./build $1 &&
+qemu-system-x86_64 $1.o
+
+rm $1.o
+
+echo $?
