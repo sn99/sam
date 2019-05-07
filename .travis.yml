@@ -1,0 +1,13 @@
+notifications:
+  email: false
+
+sudo: required
+
+git:
+  depth: 10
+
+before_install:
+  - sudo apt-get install nasm
+
+script:
+  - ./build main
